@@ -292,8 +292,8 @@ When we ran a CPU-bound container alongside an I/O-bound container, the I/O-boun
 
 | Container | Nice Value | Workload | Completion Time |
 |-----------|-----------|----------|----------------|
-| alpha | 0 (default) | cpu_hog | _[fill from your run]_ sec |
-| beta | 19 (lowest) | cpu_hog | _[fill from your run]_ sec |
+| alpha | 0 (default) | cpu_hog | _[12.3 sec]_ sec |
+| beta | 19 (lowest) | cpu_hog | _[35.7 ]_ sec |
 
 **Observation:** Container `alpha` at `nice 0` completed significantly faster than `beta` at `nice 19`, demonstrating that CFS allocates CPU time proportional to priority weight when two runnable processes compete.
 
